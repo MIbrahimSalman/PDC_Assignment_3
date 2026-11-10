@@ -1,0 +1,8 @@
+{
+  "cpu": "AMD Ryzen 5 5500U with Radeon Graphics",
+  "physical_cores": 6,
+  "logical_processors": 12,
+  "host_ram_bytes": 7866085376,
+  "source": "Windows CIM Win32_Processor and Win32_ComputerSystem",
+  "date": "2026-11-23"
+}
