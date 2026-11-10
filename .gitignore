@@ -1,0 +1,29 @@
+**/serial
+**/parallel
+**/false_sharing
+**/hello
+**/pingpong
+*.exe
+*.o
+__pycache__/
+
+# Automation scripts and planning notes (local only)
+make_commits.py
+commit_plan*.md
+GIT_COMMIT_PLAN.md
+group_details.md
+
+# Confidential peer evaluations (submitted privately to instructor)
+peer_evaluation/
+
+# LaTeX build artifacts and temporary compilation files
+*.aux
+*.out
+*.toc
+report/*.log
+report/*.aux
+report/*.out
+report/*.toc
+report/compile-pass*.txt
+report/formatting_audit.json
+report/content.json
