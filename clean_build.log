@@ -1,0 +1,27 @@
+make[1]: Entering directory '/mnt/c/Users/Fatima/Downloads/pdc assignment 3/clean_build_check/Group04_Assignment3/cs1_heat_mpi'
+g++ -O3 -std=c++17 -Wall -Wextra -Wpedantic serial.cpp -o serial
+mpic++ -O3 -std=c++17 -Wall -Wextra -Wpedantic parallel.cpp -o parallel
+make[1]: Leaving directory '/mnt/c/Users/Fatima/Downloads/pdc assignment 3/clean_build_check/Group04_Assignment3/cs1_heat_mpi'
+make[1]: Entering directory '/mnt/c/Users/Fatima/Downloads/pdc assignment 3/clean_build_check/Group04_Assignment3/cs2_kmer_openmp'
+g++ -O3 -std=c++17 -Wall -Wextra -Wpedantic serial.cpp -o serial
+g++ -O3 -std=c++17 -Wall -Wextra -Wpedantic -fopenmp parallel.cpp -o parallel
+g++ -O3 -std=c++17 -Wall -Wextra -Wpedantic -fopenmp false_sharing.cpp -o false_sharing
+make[1]: Leaving directory '/mnt/c/Users/Fatima/Downloads/pdc assignment 3/clean_build_check/Group04_Assignment3/cs2_kmer_openmp'
+make[1]: Entering directory '/mnt/c/Users/Fatima/Downloads/pdc assignment 3/clean_build_check/Group04_Assignment3/cs3_montecarlo'
+g++ -O3 -std=c++17 -Wall -Wextra -Wpedantic serial.cpp -o serial
+g++ -O3 -std=c++17 -Wall -Wextra -Wpedantic -fopenmp parallel.cpp -o parallel
+make[1]: Leaving directory '/mnt/c/Users/Fatima/Downloads/pdc assignment 3/clean_build_check/Group04_Assignment3/cs3_montecarlo'
+make[1]: Entering directory '/mnt/c/Users/Fatima/Downloads/pdc assignment 3/clean_build_check/Group04_Assignment3/cs4_pagerank_openmp'
+g++ -O3 -std=c++17 -Wall -Wextra -Wpedantic serial.cpp -o serial
+g++ -O3 -std=c++17 -Wall -Wextra -Wpedantic -fopenmp parallel.cpp -o parallel
+make[1]: Leaving directory '/mnt/c/Users/Fatima/Downloads/pdc assignment 3/clean_build_check/Group04_Assignment3/cs4_pagerank_openmp'
+make[1]: Entering directory '/mnt/c/Users/Fatima/Downloads/pdc assignment 3/clean_build_check/Group04_Assignment3/cs5_samplesort_mpi'
+g++ -O3 -std=c++17 -Wall -Wextra -Wpedantic serial.cpp -o serial
+mpic++ -O3 -std=c++17 -Wall -Wextra -Wpedantic parallel.cpp -o parallel
+mpic++ -O3 -std=c++17 -Wall -Wextra -Wpedantic pingpong.cpp -o pingpong
+make[1]: Leaving directory '/mnt/c/Users/Fatima/Downloads/pdc assignment 3/clean_build_check/Group04_Assignment3/cs5_samplesort_mpi'
+seconds=9.5909999999999995e-05 compute_seconds=2.153500000000003e-05 exchange_seconds=2.6729999999999986e-05 reduction_seconds=6.7583999999999982e-05 max_change=1.3979690257612774 N=23 steps=17 K=1 workers=2 decomposition=2d mode=overlap verified=yes max_error=0
+seconds=0.0014652140000634972 generation_seconds=4.0510999951948179e-05 total=9996 expected=9996 mismatched_bins=0 verified=yes workers=2 mode=private L=10003 k=8 private_bytes=1048576 million_kmers_per_second=6.8222116356838036
+seconds=0.0044566519998170406 price=10.467422437920504 standard_error=0.046587404798348449 black_scholes=10.450583572185565 z_score=0.36144674312351033 samples=100003 workers=2 mode=good max_error=0 se_error=0 verified=yes
+seconds=0.0021235249998881045 generation_seconds=0.00042312400000810158 vertices=128 edges=10003 workers=2 mode=push schedule=dynamic chunk=4 iterations=11 residual=7.5624967225962347e-11 rank_sum=1.0000000000000011 imbalance=1.0064000989854742 max_error=4.163336342344337e-16 l1_error=1.0718422677191697e-15 verified=yes million_edges_per_second=51.8162018369447
+seconds=0.00033097900000000002 generation_seconds=2.938e-05 local_sort_seconds=0.000104819 sampling_seconds=1.1691999999999996e-05 exchange_seconds=0.00016065899999999998 final_sort_seconds=5.2055999999999977e-05 max_exchange_seconds=0.000161605 N=10003 workers=2 distribution=skew oversampling=8 imbalance=1.7928621413575927 verified=yes exact_oracle=yes bucket_sizes=8967,1036
