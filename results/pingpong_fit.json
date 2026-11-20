@@ -1,0 +1,11 @@
+{
+  "alpha_seconds": 2.52735e-07,
+  "alpha_method": "median zero-byte one-way time",
+  "beta_seconds_per_byte": 3.686767983004769e-10,
+  "r_squared": 0.9917494886515179,
+  "fit_min_bytes": 4096,
+  "fit_max_bytes": 4194304,
+  "runs_per_size": 3,
+  "unconstrained_alpha_seconds": -3.853215634167304e-05,
+  "unconstrained_beta_seconds_per_byte": 3.8013331489347417e-10
+}
